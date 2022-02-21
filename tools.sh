@@ -116,7 +116,6 @@ update() {
     screen -r ktproxy -p 0 -X stuff $'\n'
 
     sleep 1s
-    cat /root/miner_proxy/configV6.yml
     echo "官方github地址：https://github.com/kt007007/KTMinerProxy"
     echo "您可运行 screen -r ktproxy 查看程序输出"
 }
