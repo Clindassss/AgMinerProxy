@@ -54,7 +54,6 @@ install() {
     screen -r ktproxy -p 0 -X stuff "./run.sh"
     screen -r ktproxy -p 0 -X stuff $'\n'
     sleep 1s
-    cat /root/miner_proxy/configV6.yml
     echo "默认账号admin  默认密码admin123 默认端口16777"
     echo "已启动web后台 您可运行 screen -r ktproxy 查看程序输出"
 }
@@ -152,7 +151,7 @@ restart() {
 
 stop() {
     if screen -list | grep -q "ktproxy"; then
-        screen -X -S minerProxy quit
+        screen -X -S ktproxy quit
     fi
     echo "KTProxy 已停止"
 }
