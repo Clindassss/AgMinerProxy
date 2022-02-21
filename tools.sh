@@ -35,7 +35,7 @@ install() {
         wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.6_linux -O /root/kt_proxy/ktproxy
         ;;
     3)
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_darwin -O /root/kt_proxy/ktproxy
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_linux -O /root/kt_proxy/ktproxy
         ;;
     *)
         echo "请输入正确的数字"
@@ -89,7 +89,7 @@ update() {
         wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.6_linux -O /root/kt_proxy/ktproxy
         ;;
     3)
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_darwin -O /root/kt_proxy/ktproxy
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_linux -O /root/kt_proxy/ktproxy
         ;;
     *)
         echo "请输入正确的数字"
