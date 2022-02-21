@@ -25,7 +25,7 @@ install() {
     echo "请选择软件版本"
     echo "  1、v0.0.4"
     echo "  2、v0.0.6"
-    echo "  3、v0.0.6（修复版）"
+    echo "  3、v0.0.7"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)
@@ -35,7 +35,7 @@ install() {
         wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.6_linux -O /root/kt_proxy/ktproxy
         ;;
     3)
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.6.1_linux -O /root/kt_proxy/ktproxy
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_darwin -O /root/kt_proxy/ktproxy
         ;;
     *)
         echo "请输入正确的数字"
@@ -79,7 +79,7 @@ update() {
     echo "请选择v4还是v5版本"
     echo "  1、v0.0.4"
     echo "  2、v0.0.6"
-    echo "  3、v0.0.6（修复版）"
+    echo "  3、v0.0.7"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)
@@ -89,7 +89,7 @@ update() {
         wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.6_linux -O /root/kt_proxy/ktproxy
         ;;
     3)
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.6.1_linux -O /root/kt_proxy/ktproxy
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_darwin -O /root/kt_proxy/ktproxy
         ;;
     *)
         echo "请输入正确的数字"
