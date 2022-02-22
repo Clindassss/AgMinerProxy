@@ -24,7 +24,7 @@ install() {
 
     echo "请选择软件版本"
     echo "  1、v0.0.4"
-    echo "  2、v0.0.6"
+    echo "  2、v3.0.3(二次完303版本)"
     echo "  3、v0.0.7"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
@@ -32,7 +32,8 @@ install() {
         wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.4_linux -O /root/kt_proxy/ktproxy
         ;;
     2)
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.6_linux -O /root/kt_proxy/ktproxy
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/minerProxy_3.0.3_linux -O /root/kt_proxy/ktproxy
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/config.yml -O /root/kt_proxy/config.yml
         ;;
     3)
         wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_linux -O /root/kt_proxy/ktproxy
@@ -54,19 +55,20 @@ install() {
     screen -r ktproxy -p 0 -X stuff "./run.sh"
     screen -r ktproxy -p 0 -X stuff $'\n'
     sleep 1s
-    echo "默认账号admin  默认密码admin123 默认端口16777"
+    echo "KTminerproxy默认账号admin  默认密码admin123 默认端口16777"
+    echo "二次元303版本 默认密码admin123 默认端口6003"
     echo "已启动web后台 您可运行 screen -r ktproxy 查看程序输出"
 }
 
 uninstall() {
-    read -p "是否确认删除KTProxy[yes/no]：" flag
+    read -p "是否确认删除Proxy[yes/no]：" flag
     if [ -z $flag ]; then
         echo "输入错误" && exit 1
     else
         if [ "$flag" = "yes" -o "$flag" = "ye" -o "$flag" = "y" ]; then
             screen -X -S ktproxy quit
             rm -rf /root/kt_proxy
-            echo "卸载KTProxy成功"
+            echo "卸载Proxy成功"
         fi
     fi
 }
@@ -78,7 +80,7 @@ update() {
     rm -rf /root/kt_proxy/ktproxy
     echo "请选择v4还是v5版本"
     echo "  1、v0.0.4"
-    echo "  2、v0.0.6"
+    echo "  2、v3.0.3(二次完303版本)"
     echo "  3、v0.0.7"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
@@ -86,7 +88,8 @@ update() {
         wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.4_linux -O /root/kt_proxy/ktproxy
         ;;
     2)
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.6_linux -O /root/kt_proxy/ktproxy
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/minerProxy_3.0.3_linux -O /root/kt_proxy/ktproxy
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/config.yml -O /root/kt_proxy/config.yml
         ;;
     3)
         wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_linux -O /root/kt_proxy/ktproxy
@@ -115,8 +118,9 @@ update() {
     screen -r ktproxy -p 0 -X stuff $'\n'
 
     sleep 1s
-    echo "官方github地址：https://github.com/kt007007/KTMinerProxy"
-    echo "您可运行 screen -r ktproxy 查看程序输出"
+    echo "KTminerproxy默认账号admin  默认密码admin123 默认端口16777"
+    echo "二次元303版本 默认密码admin123 默认端口6003"
+    echo "已启动web后台 您可运行 screen -r ktproxy 查看程序输出"
 }
 
 start() {
