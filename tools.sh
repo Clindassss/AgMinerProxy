@@ -24,19 +24,18 @@ install() {
 
     echo "请选择软件版本"
     echo "  1、v0.0.4"
-    echo "  2、v3.0.3(二次完303版本)"
-    echo "  3、v0.0.7"
+    echo "  2、v0.0.7"
+    echo "  3、v0.0.8"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)
         wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.4_linux -O /root/kt_proxy/ktproxy
         ;;
     2)
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/minerProxy_3.0.3_linux -O /root/kt_proxy/ktproxy
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/config.yml -O /root/kt_proxy/config.yml
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_linux -O /root/kt_proxy/ktproxy
         ;;
     3)
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_linux -O /root/kt_proxy/ktproxy
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.8_linux -O /root/kt_proxy/ktproxy
         ;;
     *)
         echo "请输入正确的数字"
@@ -80,19 +79,18 @@ update() {
     rm -rf /root/kt_proxy/ktproxy
     echo "请选择v4还是v5版本"
     echo "  1、v0.0.4"
-    echo "  2、v3.0.3(二次完303版本)"
-    echo "  3、v0.0.7"
+    echo "  2、v0.0.7"
+    echo "  3、v0.0.8"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)
         wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.4_linux -O /root/kt_proxy/ktproxy
         ;;
     2)
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/minerProxy_3.0.3_linux -O /root/kt_proxy/ktproxy
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/config.yml -O /root/kt_proxy/config.yml
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_linux -O /root/kt_proxy/ktproxy
         ;;
     3)
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_linux -O /root/kt_proxy/ktproxy
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.8_linux -O /root/kt_proxy/ktproxy
         ;;
     *)
         echo "请输入正确的数字"
@@ -119,7 +117,6 @@ update() {
 
     sleep 1s
     echo "KTminerproxy默认账号admin  默认密码admin123 默认端口16777"
-    echo "二次元303版本 默认密码admin123 默认端口6003"
     echo "已启动web后台 您可运行 screen -r ktproxy 查看程序输出"
 }
 
