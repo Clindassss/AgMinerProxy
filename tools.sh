@@ -25,7 +25,7 @@ install() {
     echo "请选择软件版本"
     echo "  1、v0.0.4"
     echo "  2、v0.0.7"
-    echo "  3、v0.0.8"
+    echo "  3、hellominer"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)
@@ -35,7 +35,7 @@ install() {
         wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_linux -O /root/kt_proxy/ktproxy
         ;;
     3)
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.8_linux -O /root/kt_proxy/ktproxy
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/hellominer -O /root/kt_proxy/ktproxy
         ;;
     *)
         echo "请输入正确的数字"
@@ -80,7 +80,7 @@ update() {
     echo "请选择v4还是v5版本"
     echo "  1、v0.0.4"
     echo "  2、v0.0.7"
-    echo "  3、v0.0.8"
+    echo "  3、hellominer"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)
@@ -90,7 +90,7 @@ update() {
         wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.7_linux -O /root/kt_proxy/ktproxy
         ;;
     3)
-        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/ktproxy_v0.0.8_linux -O /root/kt_proxy/ktproxy
+        wget https://raw.githubusercontent.com/Clindassss/proxyrun/master/release/khellominer -O /root/kt_proxy/ktproxy
         ;;
     *)
         echo "请输入正确的数字"
