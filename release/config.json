@@ -1,0 +1,57 @@
+{
+    "Debug": true,
+    "Retries": 0,
+    "ServeNodes": [
+        "relay+tls://:8001/127.0.0.1:5000?cert=/root/gost_cert/cert.pem&key=/root/gost_cert/key.pem"
+    ],
+    "Routes": [
+        {
+            "Retries": 0,
+            "ServeNodes": [
+        		  "relay+tls://:8002/127.0.0.1:5001?cert=/root/gost_cert/cert.pem&key=/root/gost_cert/key.pem"
+            ]
+        },
+        {
+            "Retries": 0,
+            "ServeNodes": [
+        		  "relay+tls://:8003/127.0.0.1:5002?cert=/root/gost_cert/cert.pem&key=/root/gost_cert/key.pem"
+            ]
+        },
+        {
+            "Retries": 0,
+            "ServeNodes": [
+        		  "relay+tls://:8004/127.0.0.1:5003?cert=/root/gost_cert/cert.pem&key=/root/gost_cert/key.pem"
+            ]
+        },
+        {
+            "Retries": 0,
+            "ServeNodes": [
+        		  "relay+tls://:8005/127.0.0.1:5004?cert=/root/gost_cert/cert.pem&key=/root/gost_cert/key.pem"
+            ]
+        },
+        {
+            "Retries": 0,
+            "ServeNodes": [
+        		  "relay+tls://:8006/127.0.0.1:5005?cert=/root/gost_cert/cert.pem&key=/root/gost_cert/key.pem"
+            ]
+        },
+        {
+            "Retries": 0,
+            "ServeNodes": [
+        		  "relay+tls://:8007/127.0.0.1:5006?cert=/root/gost_cert/cert.pem&key=/root/gost_cert/key.pem"
+            ]
+        },
+        {
+            "Retries": 0,
+            "ServeNodes": [
+        		  "relay+tls://:8008/127.0.0.1:5007?cert=/root/gost_cert/cert.pem&key=/root/gost_cert/key.pem"
+            ]
+        },
+        {
+            "Retries": 0,
+            "ServeNodes": [
+        		  "relay+tls://:8000/127.0.0.1:5000?cert=/root/gost_cert/cert.pem&key=/root/gost_cert/key.pem"
+            ]
+        }
+    ]
+}
