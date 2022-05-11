@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
 
-# HxMinerProxy
+# AgMinerProxy
 <img src="https://raw.githubusercontent.com/Clindassss/AgMinerProxy/main/image/logo.png#gh-dark-mode-only" alt="Logo" width="200" height="200">
 <img src="https://raw.githubusercontent.com/Clindassss/AgMinerProxy/main/image/slogo.png#gh-light-mode-only" alt="Logo" width="200" height="200">
 
@@ -31,10 +31,8 @@ LINUX更新脚本已经修复 centos ubuntu系统均可使用脚本使用3直接
 windwos系统请直接替换EXE主文件即可
 ```
 最新版本：
-2.2.2
-极大稳定了算力补偿机制，给你稳稳的幸福
-修复昨晚更新的一些BUG 
-新安装软件修改为随机端口
+2.2.3
+增加了本地算力修改的功能
 ```
   </p>
 </div>
@@ -185,6 +183,8 @@ ___
 # 更新日志
 
 ```
+2.2.3
+增加了本地算力修改的功能
 2.2.2
 极大稳定了算力补偿机制，给你稳稳的幸福
 修复昨晚更新的一些BUG 
@@ -357,7 +357,7 @@ TOKEN超时切换到登录页自动保留了账号密码
 >>## 算力呈现波浪状
 >>><img src="./image/t10.png" alt="Logo"><br>
 >>>
->>>如果出现上图中的情况, 说明您开启了多个相同端口的HXMinerproxy, 关闭多余的进程即可。
+>>>如果出现上图中的情况, 说明您开启了多个相同端口的AGMinerproxy, 关闭多余的进程即可。
 >><span id="q2"></span>
 >>## 负载均衡
 >>>等待更新
@@ -400,7 +400,7 @@ TOKEN超时切换到登录页自动保留了账号密码
 # KENC文档说明
 <p id="kenc"></p>
 
-### KENC是本地->远程HX隧道，局域网部署在一台设备上即可，可与远程HXMinerProxy通过KENC协议进行通信。
+### KENC是本地->远程AG隧道，局域网部署在一台设备上即可，可与远程AGMinerProxy通过KENC协议进行通信。
 
 <a href="https://github.com/Clindassss/AgMinerProxy/tree/main/kenc/kenc_v_win.exe">点击下载WINDOWS客户端</a>
 
@@ -408,12 +408,12 @@ TOKEN超时切换到登录页自动保留了账号密码
 
 ### 使用环境
 ```
-HXMinerproxy版本>=2.1.0
+AGMinerproxy版本>=2.1.0
 ```
 
 ## 使用说明
 
-### 1.远程HXminerproxy先配置一个KENC协议的端口
+### 1.远程AGminerproxy先配置一个KENC协议的端口
 
 <img src="./image/t14.png" alt="Logo" width="300">
 
@@ -432,7 +432,7 @@ HXMinerproxy版本>=2.1.0
 <ul>
     <li>先随便填写个本地端口 小于65535的数字</li>
     <li>本地协议选择TCP或SSL，选择采矿设备支持的协议即可</li>
-    <li>目标地址填写远程的HXMinerproxy的连接地址，链接地址为远程ip:端口号</li>
+    <li>目标地址填写远程的AGMinerproxy的连接地址，链接地址为远程ip:端口号</li>
     <li>最大连接数默认无上限</li>
 </ul>
 
