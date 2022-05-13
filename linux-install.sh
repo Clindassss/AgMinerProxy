@@ -124,7 +124,7 @@ clearlog() {
 
 stop() {
     colorEcho $BLUE "终止AGMinerProxy进程"
-    killall HXroxy
+    killall AGproxy
     sleep 1
 }
 
@@ -244,7 +244,7 @@ installapp() {
         return
     fi
 
-    checkProcess "HXroxy"
+    checkProcess "AGproxy"
     if [ $? -eq 1 ]; then
         colorEcho ${RED} "发现正在运行的AGMinerProxy, 需要停止才可继续安装。"
         colorEcho ${YELLOW} "输入1停止正在运行的AGMinerProxy并且继续安装, 输入2取消安装。"
