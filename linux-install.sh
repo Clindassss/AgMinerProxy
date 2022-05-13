@@ -30,7 +30,6 @@ ISSUE() {
     echo "2.2.0"
     echo "2.2.1"
     echo "2.2.2"
-	echo "2.2.2"
 	echo "2.2.3"
 }
 
@@ -413,7 +412,7 @@ read -p "$(echo -e "请选择[1-14]：")" choose
 
 case $choose in
 1)
-    installapp 2.2.2
+    installapp 2.2.3
     ;;
 2)
     uninstall
