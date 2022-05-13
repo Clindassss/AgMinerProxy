@@ -2,7 +2,7 @@
 # Author: Clindassss
 # github: https://github.com/Clindassss
 
-VERSION="2.2.2"
+VERSION="2.2.3"
 
 DOWNLOAD_HOST="https://github.com/Clindassss/AgMinerProxy/raw/main/Linux-64"
 
@@ -30,6 +30,7 @@ ISSUE() {
     echo "2.2.0"
     echo "2.2.1"
     echo "2.2.2"
+	echo "2.2.3"
 }
 
 
